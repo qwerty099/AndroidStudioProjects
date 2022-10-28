@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="65dp">
+
+        <TableRow
+            android:layout_width="372dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#888787"
+                android:text="CPF"
+                app:iconTint="#888787"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="118dp"
+                android:layout_height="130dp"
+                android:backgroundTint="#888787"
+                android:text="Busca de CEP"
+                app:iconTint="#888787" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="118dp"
+                android:layout_height="130dp"
+                android:backgroundTint="#888787"
+                android:text="Calculadora"
+                app:iconTint="#888787" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="184dp">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:backgroundTint="#888787"
+                android:text="Validador de CNPJ"
+                app:iconTint="#888787" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#888787"
+                android:text="Gerador de Lorem Ipsum"
+                app:iconTint="#888787" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:backgroundTint="#888787"
+                android:text="Contador de Dias"
+                app:iconTint="#888787" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
