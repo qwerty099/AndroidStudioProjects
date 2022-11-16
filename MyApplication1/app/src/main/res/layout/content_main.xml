@@ -52,7 +52,7 @@
                 android:layout_height="130dp"
                 android:backgroundTint="#888787"
                 android:text="Calculadora"
-                android:onClick="calculadora"
+                android:onClick="openWindow2"
                 app:iconTint="#888787"
                 tools:ignore="TextContrastCheck" />
         </TableRow>
