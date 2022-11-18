@@ -20,7 +20,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="30sp"
                 android:layout_weight="1"
-                android:text="Resultado da Calculadora" />
+                android:text="Resultado da Calculadora"
+                android:textColor="@color/white" />
         </TableRow>
 
         <TableRow
@@ -43,7 +44,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="()"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -52,7 +53,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="^"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -61,7 +62,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="/"
                 android:textColor="#FFFFFF" />
         </TableRow>
 
@@ -76,7 +77,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#FF0000"
-                android:text="C"
+                android:text="7"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -86,7 +87,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="8"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -96,7 +97,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="9"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -106,7 +107,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="X"
                 android:textColor="#FFFFFF" />
         </TableRow>
 
@@ -121,7 +122,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#FF0000"
-                android:text="C"
+                android:text="4"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -131,7 +132,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="5"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -141,7 +142,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="6"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -151,7 +152,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="-"
                 android:textColor="#FFFFFF" />
         </TableRow>
 
@@ -166,7 +167,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#FF0000"
-                android:text="C"
+                android:text="1"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -176,7 +177,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="2"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -186,7 +187,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="3"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -196,7 +197,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
+                android:text="+"
                 android:textColor="#FFFFFF" />
         </TableRow>
 
@@ -211,7 +212,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#FF0000"
-                android:text="C"
+                android:text="."
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -221,17 +222,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="C"
-                android:textColor="#FFFFFF" />
-
-            <Button
-
-                android:id="@+id/button34"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="C"
+                android:text="0"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -240,8 +231,8 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="C"
+                android:layout_weight="2"
+                android:text="="
                 android:textColor="#FFFFFF" />
         </TableRow>
     </TableLayout>
