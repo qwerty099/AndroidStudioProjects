@@ -13,10 +13,27 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_weight="1"
+                android:text="Resultado da Calculadora"
+                android:textColor="@color/white"
+                android:layout_gravity="end"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="30sp"
                 android:layout_weight="1"
@@ -63,7 +80,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="/"
-                android:textColor="#FFFFFF" />
+                android:textColor="?android:attr/colorFocusedHighlight" />
         </TableRow>
 
         <TableRow
@@ -76,7 +93,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="#FF0000"
+
                 android:text="7"
                 android:textColor="#FFFFFF" />
 
@@ -108,7 +125,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="X"
-                android:textColor="#FFFFFF" />
+                android:textColor="?android:attr/colorFocusedHighlight" />
         </TableRow>
 
         <TableRow
@@ -121,7 +138,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="#FF0000"
                 android:text="4"
                 android:textColor="#FFFFFF" />
 
@@ -153,7 +169,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="-"
-                android:textColor="#FFFFFF" />
+                android:textColor="?android:attr/colorFocusedHighlight" />
         </TableRow>
 
         <TableRow
@@ -166,7 +182,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="#FF0000"
                 android:text="1"
                 android:textColor="#FFFFFF" />
 
@@ -198,7 +213,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="+"
-                android:textColor="#FFFFFF" />
+                android:textColor="?android:attr/colorFocusedHighlight" />
         </TableRow>
 
         <TableRow
@@ -211,7 +226,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="#FF0000"
                 android:text="."
                 android:textColor="#FFFFFF" />
 
@@ -233,7 +247,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:text="="
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/white"
+                android:backgroundTint="?android:attr/colorFocusedHighlight"/>
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
