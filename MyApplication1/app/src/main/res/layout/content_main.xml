@@ -26,7 +26,7 @@
         tools:layout_editor_absoluteY="65dp">
 
         <TableRow
-            android:layout_width="372dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
@@ -51,15 +51,15 @@
                 android:layout_width="118dp"
                 android:layout_height="130dp"
                 android:backgroundTint="#888787"
-                android:text="Calculadora"
                 android:onClick="openWindow2"
+                android:text="Calculadora"
                 app:iconTint="#888787"
                 tools:ignore="TextContrastCheck" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="184dp">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/button5"
