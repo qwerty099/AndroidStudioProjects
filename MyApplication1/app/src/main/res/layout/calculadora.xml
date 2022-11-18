@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#888787">
 
 
     <LinearLayout
@@ -15,9 +16,9 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Resultado da Calculadora" />
     </LinearLayout>
 
     <LinearLayout
@@ -32,28 +33,36 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="C" />
+            android:backgroundTint="#FF0000"
+            android:text="C"
+            android:textColor="#FFFFFF" />
+
         <Button
 
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="C" />
+            android:text="C"
+            android:textColor="#FFFFFF" />
+
         <Button
 
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="C" />
+            android:text="C"
+            android:textColor="#FFFFFF" />
+
         <Button
 
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="C" />
+            android:text="C"
+            android:textColor="#FFFFFF" />
 
 
     </LinearLayout>
