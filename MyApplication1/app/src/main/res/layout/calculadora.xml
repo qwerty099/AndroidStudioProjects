@@ -53,7 +53,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#FF0000"
                 android:text="C"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="LimpaOnClick"/>
 
             <Button
 
@@ -62,7 +63,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="()"
-                android:textColor="#FFFFFF" />
+                android:textColor="?android:attr/colorFocusedHighlight"
+                android:onClick="ParentesesOnClick"/>
 
             <Button
 
@@ -71,7 +73,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="^"
-                android:textColor="#FFFFFF" />
+                android:textColor="?android:attr/colorFocusedHighlight"
+                android:onClick="ElevadoOnClick"/>
 
             <Button
 
@@ -80,7 +83,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="/"
-                android:textColor="?android:attr/colorFocusedHighlight" />
+                android:textColor="?android:attr/colorFocusedHighlight"
+                android:onClick="DivididoOnClick"/>
         </TableRow>
 
         <TableRow
@@ -95,7 +99,8 @@
                 android:layout_weight="1"
 
                 android:text="7"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="SeteOnClick"/>
 
             <Button
 
@@ -105,7 +110,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="8"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="OitoOnClick"/>
 
             <Button
 
@@ -115,7 +121,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="9"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="NoveOnClick"/>
 
             <Button
 
@@ -125,7 +132,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="X"
-                android:textColor="?android:attr/colorFocusedHighlight" />
+                android:textColor="?android:attr/colorFocusedHighlight"
+                android:onClick="VezesOnClick"/>
         </TableRow>
 
         <TableRow
@@ -139,7 +147,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="4"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="QuatroOnClick"/>
 
             <Button
 
@@ -149,7 +158,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="5"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="CincoOnClick"/>
 
             <Button
 
@@ -159,7 +169,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="6"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="SeisOnClick"/>
 
             <Button
 
@@ -169,7 +180,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="-"
-                android:textColor="?android:attr/colorFocusedHighlight" />
+                android:textColor="?android:attr/colorFocusedHighlight"
+                android:onClick="MenosOnClick"/>
         </TableRow>
 
         <TableRow
@@ -183,7 +195,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="1"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="UmOnClick"/>
 
             <Button
 
@@ -193,7 +206,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="2"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="DoisOnClick"/>
 
             <Button
 
@@ -203,7 +217,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="3"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="TresOnClick"/>
 
             <Button
 
@@ -213,7 +228,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="+"
-                android:textColor="?android:attr/colorFocusedHighlight" />
+                android:textColor="?android:attr/colorFocusedHighlight"
+                android:onClick="MaisOnClick"/>
         </TableRow>
 
         <TableRow
@@ -227,7 +243,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="."
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="PontoOnClick"/>
 
             <Button
 
@@ -237,7 +254,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="0"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:onClick="ZeroOnClick"/>
 
             <Button
 
@@ -248,7 +266,8 @@
                 android:layout_weight="2"
                 android:text="="
                 android:textColor="@color/white"
-                android:backgroundTint="?android:attr/colorFocusedHighlight"/>
+                android:backgroundTint="?android:attr/colorFocusedHighlight"
+                android:onClick="IgualOnClick"/>
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
