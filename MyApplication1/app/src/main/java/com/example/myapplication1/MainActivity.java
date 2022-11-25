@@ -87,8 +87,13 @@ public class MainActivity extends AppCompatActivity {
         workings = workings + givenValue;
         workingsTV.setText(workings);
     }
-    public void LimpaOnClick(View view) {
+    public void IgualOnClick(View view) {
+    }
 
+    public void LimpaOnClick(View view) {
+        workingsTV.setText("");
+        workings = "";
+        resultsTV.setText("");
 
     }
 
@@ -159,6 +164,5 @@ public class MainActivity extends AppCompatActivity {
         setWorkings("0");
     }
 
-    public void IgualOnClick(View view) {
-    }
+
 }
