@@ -82,6 +82,11 @@ public class MainActivity extends AppCompatActivity {
         workingsTV = (TextView)findViewById(R.id.workingsTextView);
         resultsTV = (TextView)findViewById(R.id.resultTextView);
     }
+
+    private void setWorkings(String givenValue){
+        workings = workings + givenValue;
+        workingsTV.setText(workings);
+    }
     public void LimpaOnClick(View view) {
 
 
@@ -91,51 +96,67 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ElevadoOnClick(View view) {
+        setWorkings("^");
     }
 
     public void DivididoOnClick(View view) {
+        setWorkings("/");
     }
 
     public void SeteOnClick(View view) {
+        setWorkings("7");
     }
 
     public void OitoOnClick(View view) {
+        setWorkings("8");
     }
 
     public void NoveOnClick(View view) {
+        setWorkings("9");
     }
 
     public void VezesOnClick(View view) {
+        setWorkings("*");
     }
 
     public void QuatroOnClick(View view) {
+        setWorkings("4");
     }
 
     public void CincoOnClick(View view) {
+        setWorkings("5");
     }
 
     public void SeisOnClick(View view) {
+        setWorkings("6");
     }
 
     public void MenosOnClick(View view) {
+        setWorkings("-");
     }
 
     public void UmOnClick(View view) {
+        setWorkings("1");
     }
 
     public void DoisOnClick(View view) {
+        setWorkings("2");
     }
 
     public void TresOnClick(View view) {
+        setWorkings("3");
     }
 
     public void MaisOnClick(View view) {
+        setWorkings("+");
     }
 
     public void PontoOnClick(View view) {
+        setWorkings(".");
     }
 
     public void ZeroOnClick(View view) {
+        setWorkings("0");
     }
 
     public void IgualOnClick(View view) {
