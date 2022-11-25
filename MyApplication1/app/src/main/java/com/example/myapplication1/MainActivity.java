@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -16,6 +17,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication1.databinding.ActivityMainBinding;
+
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -88,6 +93,19 @@ public class MainActivity extends AppCompatActivity {
         workingsTV.setText(workings);
     }
     public void IgualOnClick(View view) {
+        Double result = null;
+
+        ScriptEngine engine = new ScriptEngineManager().getEngineByName("rhino");
+
+        try {
+            result = (double)engine.eval(workings);
+        } catch (ScriptException e)
+        {
+            Toast.makeText( this,"Invalid Input", Toast.LENGTH_SHORT).show();
+        }
+        if (result != null)
+            resultsTV.setText(String.valueOf(result.doubleValue()));
+
     }
 
     public void LimpaOnClick(View view) {
