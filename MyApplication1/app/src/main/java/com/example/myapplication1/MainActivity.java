@@ -18,6 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication1.databinding.ActivityMainBinding;
 
+import java.util.ArrayList;
+
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     TextView resultsTV;
 
     String workings = "";
+    String formula = "";
+    String tempFormula = "";
 
 
 
@@ -107,16 +111,68 @@ public class MainActivity extends AppCompatActivity {
         Double result = null;
 
         ScriptEngine engine = new ScriptEngineManager().getEngineByName("rhino");
+        checkForPowerOf();
 
         try {
-            result = (double)engine.eval(workings);
+            result = (double)engine.eval(formula);
         } catch (ScriptException e)
         {
-            Toast.makeText( this,"Invalid Input", Toast.LENGTH_SHORT).show();
+            Toast.makeText( this,"Dados invalidos", Toast.LENGTH_SHORT).show();
         }
         if (result != null)
             resultsTV.setText(String.valueOf(result.doubleValue()));
 
+    }
+
+    private void checkForPowerOf() {
+        ArrayList<Integer> indexOfPowers = new ArrayList<>();
+        for(int i = 0; i < workings.length(); i++)
+        {
+            if (workings.charAt(i) == '^')
+                indexOfPowers.add(i);
+        }
+        formula = workings;
+        tempFormula = workings;
+        for (Integer index: indexOfPowers)
+        {
+            changeFormula(index);
+        }
+        formula = tempFormula;
+    }
+
+    private void changeFormula(Integer index){
+        String numeroesquerdo = "";
+        String numerodireito = "";
+
+        
+        for (int i = index + 1; i< workings.length(); i++)
+        {
+            if(isNumeric(workings.charAt(i)))
+            numerodireito = numerodireito + workings.charAt(i);
+            else
+                break;
+        }
+
+        for (int i = index - 1; i>= 0; i--)
+        {
+            if(isNumeric(workings.charAt(i)))
+                numeroesquerdo = numeroesquerdo + workings.charAt(i);
+            else
+                break;
+        }
+
+        String original = numeroesquerdo + "^" + numerodireito;
+        String changed = "Math.pow("+numeroesquerdo+","+numerodireito+")";
+        tempFormula = tempFormula.replace(original,changed);
+
+    }
+
+    private boolean isNumeric(char c)
+    {
+        if ((c <= '9' && c >= '0') || c == '.')
+            return true;
+
+        return false;
     }
 
     public void LimpaOnClick(View view) {
