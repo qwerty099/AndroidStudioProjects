@@ -3,6 +3,7 @@ package com.example.myapplication1;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -18,11 +19,19 @@ import com.example.myapplication1.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView workingsTV;
+    TextView resultsTV;
+
+    String workings = "";
+
+
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -68,6 +77,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.calculadora);
     }
 
+
+    private void initTextViews(){
+        workingsTV = (TextView)findViewById(R.id.workingsTextView);
+        resultsTV = (TextView)findViewById(R.id.resultTextView);
+    }
     public void LimpaOnClick(View view) {
 
 
