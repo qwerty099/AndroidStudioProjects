@@ -68,4 +68,62 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.calculadora);
     }
 
+    public void LimpaOnClick(View view) {
+
+
+    }
+
+    public void ParentesesOnClick(View view) {
+    }
+
+    public void ElevadoOnClick(View view) {
+    }
+
+    public void DivididoOnClick(View view) {
+    }
+
+    public void SeteOnClick(View view) {
+    }
+
+    public void OitoOnClick(View view) {
+    }
+
+    public void NoveOnClick(View view) {
+    }
+
+    public void VezesOnClick(View view) {
+    }
+
+    public void QuatroOnClick(View view) {
+    }
+
+    public void CincoOnClick(View view) {
+    }
+
+    public void SeisOnClick(View view) {
+    }
+
+    public void MenosOnClick(View view) {
+    }
+
+    public void UmOnClick(View view) {
+    }
+
+    public void DoisOnClick(View view) {
+    }
+
+    public void TresOnClick(View view) {
+    }
+
+    public void MaisOnClick(View view) {
+    }
+
+    public void PontoOnClick(View view) {
+    }
+
+    public void ZeroOnClick(View view) {
+    }
+
+    public void IgualOnClick(View view) {
+    }
 }
