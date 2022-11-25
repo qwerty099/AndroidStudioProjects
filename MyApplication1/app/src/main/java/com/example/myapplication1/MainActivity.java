@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     String workings = "";
 
 
+
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
@@ -49,7 +50,9 @@ public class MainActivity extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        })
+
+        ;
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -61,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        initTextViews();
     }
 
     @Override
@@ -68,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+
     }
 
     @Override
@@ -80,15 +86,20 @@ public class MainActivity extends AppCompatActivity {
     public void openWindow2(View v) {
         //call window2
         setContentView(R.layout.calculadora);
+        initTextViews();
+
+
     }
 
 
     private void initTextViews(){
+
         workingsTV = (TextView)findViewById(R.id.workingsTextView);
         resultsTV = (TextView)findViewById(R.id.resultTextView);
     }
 
     private void setWorkings(String givenValue){
+
         workings = workings + givenValue;
         workingsTV.setText(workings);
     }
@@ -112,11 +123,24 @@ public class MainActivity extends AppCompatActivity {
         workingsTV.setText("");
         workings = "";
         resultsTV.setText("");
-
+    parentesesEsquerdo = true;
     }
+
+    boolean parentesesEsquerdo;
 
     public void ParentesesOnClick(View view) {
-    }
+        if (parentesesEsquerdo)
+        {
+            setWorkings("(");
+            parentesesEsquerdo = false;
+        }
+        else
+            {
+                setWorkings(")");
+                parentesesEsquerdo = true;
+            }
+
+            }
 
     public void ElevadoOnClick(View view) {
         setWorkings("^");
