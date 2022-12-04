@@ -51,8 +51,8 @@
                 android:layout_width="118dp"
                 android:layout_height="130dp"
                 android:backgroundTint="#888787"
-                android:text="Calculadora"
                 android:onClick="openWindow2"
+                android:text="Calculadora"
                 app:iconTint="#888787"
                 tools:ignore="TextContrastCheck" />
         </TableRow>
@@ -75,7 +75,9 @@
                 android:layout_height="match_parent"
                 android:backgroundTint="#888787"
                 android:text="Gerador de Lorem Ipsum"
-                app:iconTint="#888787" />
+                app:iconTint="#888787"
+                android:onClick="openWindow3"/>
+
 
             <Button
                 android:id="@+id/button4"

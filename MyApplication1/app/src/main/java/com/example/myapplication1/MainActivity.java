@@ -1,8 +1,9 @@
 package com.example.myapplication1;
-import java.util.Random
+import java.util.Random;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -17,6 +18,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.myapplication1.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+
+    TextView txtlorem;
+    int number;
+    String numero;
+
+
+
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
@@ -67,12 +75,20 @@ public class MainActivity extends AppCompatActivity {
         //call window2
         setContentView(R.layout.calculadora);
     }
+    public void openWindow3(View v) {
+        //call window2
+        setContentView(R.layout.loremipsum);
+    }
 
     public void GerarLoremipsum(View view) {
 
         Random random = new Random();
-        int number = random.nextInt(10);
-        txtlorem = number;
+        number = random.nextInt(10);
+
+        number numero;
+        txtlorem.setText(numero);
+
+
 
 
     }
