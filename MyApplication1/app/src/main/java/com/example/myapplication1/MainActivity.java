@@ -15,13 +15,13 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import com.example.myapplication1.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView txtlorem;
     int number;
-    String numero;
 
 
 
@@ -80,18 +80,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.loremipsum);
     }
 
+
     public void GerarLoremipsum(View view) {
 
         Random random = new Random();
-        number = random.nextInt(10);
+        number = random.nextInt(1);
 
-        number numero;
-        txtlorem.setText(numero);
+
+        String numero = Integer.toString(number);
+       // txtlorem.setText(numero);
+
 
 
 
 
     }
+
 
 
 }
