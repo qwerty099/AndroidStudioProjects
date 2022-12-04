@@ -68,4 +68,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.calculadora);
     }
 
+    public void GerarLoremipsum(View view) {
+
+        Lorem lorem = LoremIpsum.getInstance();
+
+        lorem.getWords(5, 10);
+
+
+
+
+
+
+
+
+    }
 }
