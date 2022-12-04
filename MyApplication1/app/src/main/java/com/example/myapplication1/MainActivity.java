@@ -21,7 +21,7 @@ import com.example.myapplication1.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     TextView loremTV;
-    int number;
+    String number;
 
 
 
@@ -78,10 +78,10 @@ public class MainActivity extends AppCompatActivity {
     public void openWindow3(View v) {
         //call window2
         setContentView(R.layout.loremipsum);
-        initTextViews();
+        initTextViewsLorem();
     }
 
-    private void initTextViews(){
+    private void initTextViewsLorem(){
 
         loremTV = (TextView)findViewById(R.id.txtlorem);
 
@@ -90,10 +90,11 @@ public class MainActivity extends AppCompatActivity {
     public void GerarLoremipsum(View view) {
 
         Random random = new Random();
-        number = random.nextInt(1);
+        int numero = random.nextInt(10);
+       
 
 
-        //String numero = Integer.toString(number);
+        String number = Integer.toString(numero);
         loremTV.setText(number);
 
 
