@@ -70,9 +70,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void GerarLoremipsum(View view) {
 
-        Lorem lorem = LoremIpsum.getInstance();
-
-        lorem.getWords(5, 10);
+        Random random = new Random();
+        int number = random.nextInt(10);
+        System.out.println(number);
 
 
 
