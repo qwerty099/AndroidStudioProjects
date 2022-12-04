@@ -1,5 +1,5 @@
 package com.example.myapplication1;
-
+import java.util.Random
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -72,14 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
         Random random = new Random();
         int number = random.nextInt(10);
-        System.out.println(number);
-
-
-
-
-
-
+        txtlorem = number;
 
 
     }
+
+
 }

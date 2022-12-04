@@ -28,10 +28,12 @@
         android:onClick="GerarLoremipsum"/>
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="565dp"
         android:layout_height="267dp"
         tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="868dp" />
+        tools:layout_editor_absoluteY="868dp"
+        android:id="@+id/txtlorem"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
