@@ -26,7 +26,7 @@
         tools:layout_editor_absoluteY="65dp">
 
         <TableRow
-            android:layout_width="372dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
@@ -59,7 +59,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="184dp">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/button5"
