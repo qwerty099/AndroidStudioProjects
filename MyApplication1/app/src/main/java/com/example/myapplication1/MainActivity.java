@@ -1,5 +1,5 @@
 package com.example.myapplication1;
-
+import java.util.Random;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -16,6 +16,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import com.example.myapplication1.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
@@ -25,6 +26,9 @@ import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
 public class MainActivity extends AppCompatActivity {
+
+    TextView loremTV;
+    String number;
 
     TextView workingsTV;
     TextView resultsTV;
@@ -123,6 +127,34 @@ public class MainActivity extends AppCompatActivity {
             resultsTV.setText(String.valueOf(result.doubleValue()));
 
     }
+    public void openWindow3(View v) {
+        //call window2
+        setContentView(R.layout.loremipsum);
+        initTextViewsLorem();
+    }
+
+    private void initTextViewsLorem(){
+
+        loremTV = (TextView)findViewById(R.id.txtlorem);
+
+    }
+
+    public void GerarLoremipsum(View view) {
+
+        Random random = new Random();
+        int numero = random.nextInt(10);
+       
+
+
+        String number = Integer.toString(numero);
+        loremTV.setText(number);
+
+
+    }
+
+
+
+
 
     private void checkForPowerOf() {
         ArrayList<Integer> indexOfPowers = new ArrayList<>();
